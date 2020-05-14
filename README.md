@@ -16,7 +16,7 @@ else {
 OUT = Right;
 }
 '''
-![shadergraphscreenshot](shadergraphscreenshot.jpg)
+![shadergraphscreenshot](shadergraphscreenshot.png)
 
 ## How to use:
 Place the script on the plane that will act as the mirror, make sure the shader has the textures with the correct names attached, an example shader is given.
