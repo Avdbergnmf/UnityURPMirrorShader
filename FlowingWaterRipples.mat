@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FlowingWaterRipples
+  m_Shader: {fileID: -6465566751694194690, guid: 4febd3256d8a44848a0e0ccbff3e1b60,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_269749FF:
+        m_Texture: {fileID: 2800000, guid: ca3b9f959df233e4687bf1f0718e0f96, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8A95CEEE:
+        m_Texture: {fileID: 2800000, guid: a20c1d2004a92494f81d2e4a605d6e6e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_9E9BC2BB:
+        m_Texture: {fileID: 2800000, guid: 4085f3e6c99b5994caf75ca54710cbee, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_CDE30266:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_E3B3D570:
+        m_Texture: {fileID: 2800000, guid: 58ea64a091a75a84eb674975bb794c59, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_F35D47CC:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Flowmap_F2D20187_Texture2D41C383D0_1840658035:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Flowmap_FB9E607C_Texture2D41C383D0_1840658035:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionTexLeft:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionTexRight:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_12481F24_Texture_1:
+        m_Texture: {fileID: 2800000, guid: b8e5c30666a896f4387ca33f4f2153b5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_B29D2204_Texture_1:
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_C34AEC20_Texture_1:
+        m_Texture: {fileID: 2800000, guid: b8e5c30666a896f4387ca33f4f2153b5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_16874AF5_Out_0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_227B26AD_Out_0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_4AC8D287_Out_0:
+        m_Texture: {fileID: 2800000, guid: 9eb57e715cf4b944f940df1079f954a0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_7C903EE6_Out_0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_96EBC1D3_Out_0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_111B5DAF: 0.58
+    - Vector1_192ABB: 1
+    - Vector1_33603BC3: 10
+    - Vector1_447CA7CF: 0.85
+    - Vector1_49200990: 0.308
+    - Vector1_500326A0: 0.72
+    - Vector1_5BF1F5FA: 1
+    - Vector1_60FF7735: 100
+    - Vector1_6264B1E0: 1
+    - Vector1_708F300: 0
+    - Vector1_74C9EBA: 0.2
+    - Vector1_7715F00E: 2.36
+    - Vector1_8AE6580C: 3.82
+    - Vector1_8DBEBB39: 1.4
+    - Vector1_90A4F962: 2.25
+    - Vector1_B93618B0: 0.2
+    - Vector1_E2B2691E: 0.01
+    - Vector1_EB72FE8E: 1
+    - Vector1_F913563F: 1.01
+    m_Colors:
+    - Color_61BC06DD: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 0}
+    - Color_B65C5706: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 0}
+    - Color_FFD3CE6B: {r: 0, g: 0, b: 0, a: 1}
+    - Vector2_66CCC9D1: {r: 0.3, g: 0.2, b: 0, a: 0}
+    - Vector2_6993578A: {r: -0.14, g: -0.068, b: 0, a: 0}
+    - Vector2_7778AD5D: {r: 0, g: 0, b: 0, a: 0}
+    - Vector2_966620B8: {r: 1.31, g: 1.28, b: 0, a: 0}
+    - Vector2_B26854B4: {r: 1, g: 1, b: 0, a: 0}
