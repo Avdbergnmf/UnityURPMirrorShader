@@ -20,6 +20,8 @@ OUT = Right;
 
 ## How to use:
 Place the script on the plane that will act as the mirror, make sure the shader has the textures with the correct names attached, an example shader is given.
+Additionally add a new tag named "PortalCam". This tag is added to the cameras rendering the water surface, such that that camera itself does not recursively also create additional mirror cameras (portalcam).
+
 
 This shader also includes some nice water flowing animations, in case you need those, but you can take these out pretty easily using shader graph by delecting the elements.
 The textures/maps I used here are also included, so you can have a go at it yourself.

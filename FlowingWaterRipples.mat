@@ -111,7 +111,7 @@ Material:
     - Vector1_B93618B0: 0.2
     - Vector1_E2B2691E: 0.01
     - Vector1_EB72FE8E: 1
-    - Vector1_F913563F: 1.01
+    - Vector1_F913563F: 0.5
     m_Colors:
     - Color_61BC06DD: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 0}
     - Color_B65C5706: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 0}

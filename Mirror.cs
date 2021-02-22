@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
@@ -6,6 +7,7 @@ using UnityEngine.Experimental.Rendering;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using RenderPipeline = UnityEngine.Rendering.RenderPipelineManager;
+using UnityEngine.UIElements;
 
 [ExecuteInEditMode]
 public class Mirror : MonoBehaviour
@@ -98,8 +100,14 @@ public class Mirror : MonoBehaviour
             RenderCamera(camera, rend, Camera.StereoscopicEye.Left, ref m_PortalTextureLeft, SRC);
             if (camera.stereoEnabled)
             {
-                //Debug.Log("Detected StereoMode!!"); // works
-                RenderCamera(camera, rend, Camera.StereoscopicEye.Right, ref m_PortalTextureRight, SRC);
+                try
+                {
+                    RenderCamera(camera, rend, Camera.StereoscopicEye.Right, ref m_PortalTextureRight, SRC);
+                }
+                catch (Exception e)
+                {
+                    Debug.LogException(e, this);
+                }
             }
         }
     }
@@ -292,15 +300,21 @@ public class Mirror : MonoBehaviour
     // Alex:
     XRNodeState findNode(List<XRNodeState> nodeStates, XRNode node)
     {
-        XRNodeState nodeState = nodeStates[0]; // <<< BE CAREFUL, THIS WILL FAIL QUIETLY IF NO CORRESPONDING NODE IS FOUND!!!
-        foreach (var node_i in nodeStates)
+        XRNodeState nodeState = new XRNodeState();
+
+        if (nodeStates.Count > 0)
         {
-            if (node_i.nodeType == XRNode.LeftEye)
+            nodeState = nodeStates[0];
+            foreach (var node_i in nodeStates)
             {
-                nodeState = node_i;
-                break;
+                if (node_i.nodeType == XRNode.LeftEye)
+                {
+                    nodeState = node_i;
+                    break;
+                }
             }
         }
+
 
         return nodeState;
     }
