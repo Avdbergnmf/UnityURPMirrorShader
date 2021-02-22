@@ -1,6 +1,6 @@
 # UnityURPMirrorShader
 https://www.reddit.com/r/Unity3D/comments/gjp2jw/mirror_shader_and_script_for_urp_that_works_for/
-A mirror shader that works with VR in URP Unity Latest version (2019.3+), though only with multi-pass
+A mirror shader that works with VR in URP Unity 2019.4 LTS, though only with multi-pass
 
 I gathered the script from the unity forum and made adjustments so it works with VR and the new URP.
 
@@ -22,6 +22,7 @@ OUT = Right;
 Place the script on the plane that will act as the mirror, make sure the shader has the textures with the correct names attached, an example shader is given.
 Additionally add a new tag named "PortalCam". This tag is added to the cameras rendering the water surface, such that that camera itself does not recursively also create additional mirror cameras (portalcam).
 
+Preferable load in the .unitypackage, if that for some reason doesn't work, the separate files are supplied in here as well.
 
 This shader also includes some nice water flowing animations, in case you need those, but you can take these out pretty easily using shader graph by delecting the elements.
 The textures/maps I used here are also included, so you can have a go at it yourself.
