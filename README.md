@@ -10,15 +10,15 @@ I gathered the script from the unity forum and made adjustments so it works with
 The shader is the culmination of youtube tutorials but its been a while so I can't remember where I got them from. Its made with shadergraph so feel free to play with it and adjust it in any way you like.
 
 The bit that makes this work with VR is the most interesting and it done with a little custom function that I found on the unity forum and adjusted for what I need:
-'''
+```
 OUT = Left;
 if (unity_StereoEyeIndex == 0){
-OUT = Left;
+  OUT = Left;
 }
 else {
-OUT = Right;
+  OUT = Right;
 }
-'''
+```
 ![shadergraphscreenshot](shadergraphscreenshot.png)
 
 ## How to use:
